@@ -48,7 +48,7 @@ sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.pow
 #Instalar fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 
-sudo ~/.fzf/install 
+~/.fzf/install 
 
 #Cambiamos los ficheros de zshrc y de powelevel10k
 
