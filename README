@@ -13,6 +13,7 @@ Configuracion de la terminal.
 
 4ºPoner la contraseña del usuario las dos veces que se solicita.
 
-5º Por último, se debe de asociar las teclas del teclado para abrir dicha terminal
+5º Por último, se debe de asociar las teclas que usted tenga para abrir una nueva terminal ( predeterminado es Ctrl + Alt + T) a la terminal Kitty instalada.
+
 
 Un saludo!!
