@@ -69,6 +69,12 @@ sudo mkdir /usr/share/zsh-sudo
 cd /usr/share/zsh-sudo
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
 
+#Instalacion de Kitty
+sudo apt install -y kitty
+
+cd $ruta
+
+sudo cp -v $ruta/kitty/* ~/.config/kitty
 
 notify-send "Terminal Instalada"
 
