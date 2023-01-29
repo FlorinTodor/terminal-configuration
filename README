@@ -39,5 +39,8 @@ más legible. Para elegir comandos anteriores sería a través de Ctrl + R, para
 
 -Descarga de la termina Kitty
 
+######################## CONSEJOS #################
+
+Se recomienda al terminar realizar un apt update y upgrade. Posteriormente realizar un reboot.
 
 Un saludo!!
