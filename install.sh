@@ -87,6 +87,9 @@ sudo ln -s -fv ~/.zshrc /root/.zshrc
 
 notify-send "Terminal Instalada"
 
+#Cambiar terminal predeterminada
+
+sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 
 #Eliminacion de carpetas
 rm -rf ~/github
