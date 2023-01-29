@@ -5,28 +5,12 @@ Configuracion de la terminal.
 # Se debe de tener en cuenta que es el primer repositorio subido a la plataforma.
 
 ############## Pasos a seguir #############
+1º Actualizar el sistemas a través de apt update y apt upgrade
 
-1º Instalamos el bat a través de dpkg -i bat*
+2º Dar permisos al archivo install.sh a través de chmod +x install.sh
 
-2º Instalamos el lsd a través de sudo apt-get install lsd
+3ºIniciar el install a través de /.install.sh
 
-3º Instalamos la fuente de la carpeta Font (Hack.zip). Para ello primero tenemos que entrar en la carpeta
-en /usr/share/font y hacer unzip del Hack.zip
+4ºPoner la contraseña del usuario las dos veces que se solicita.
 
-4ºDebemos de instalar el zsh a través de apt install zsh. Posteriormente lo tendremos que asignar como 
-shell predeterminada a través de chsh -s $(which zsh)
-
-5ºDebemos de instalar kitty y posteriormente configurarlo como predeterminado. Tras ello nos vamos a la carpeta cd ~/.config/kitty y colocamos los ficheros de la carpeta kitty
-
-6ºPor último, debemos de instalar el Powelevel10k a través de :
-
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-	echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-	
-7ºTras instalar el Powelevel solo quedaría cambiar los archivos de zshrc tanto de usuario como de root, que ambos se encuentran en sus carpetas correspondientes (usuario, root). Posteriormente, realizar lo mismo con los ficheros ~/.p10k.zsh
-
-8º Instalar el plugin de "plugin_sudo" creando una carpeta en /usr/share/zsh-sudo y metiendo el plugin en dicho directorio.
-
-9º Instalamos el fzf a través de :
-	- git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-	- ~/.fzf/install
+Un saludo!!
