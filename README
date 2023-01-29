@@ -16,4 +16,28 @@ Configuracion de la terminal.
 5º Por último, se debe de asociar las teclas que usted tenga para abrir una nueva terminal ( predeterminado es Ctrl + Alt + T) a la terminal Kitty instalada.
 
 
+#################### UTILIDADES Y PAQUETES INSTALADOS ##################
+
+-Descarga del paquete bat que se va a utilzar para visualizar de forma más legible los archivos de texto, sustituye al cat
+
+-Descarga del paquete lsd que hace que se vea más legible la llamada ls, por lo tanto la sustituye
+
+-Descarga de la fuente HAck.zip
+
+-Descarga de la shell ZSH
+
+-Descarga de la Powelevel10k
+
+-Descarga del paquete FZF que nos permite visualizar y elegir de forma más eficiente comandos llamados anteriormente o buscar un fichero de forma
+más legible. Para elegir comandos anteriores sería a través de Ctrl + R, para buscar sería Ctrl + T
+
+-Descarga del plugin sudo para facilitar y evitar el uso de escribir "sudo" a través de teclear dos veces el botón "esc"
+
+-Descarga del plugin de autossugestions de zsh
+
+-Descarga del plugin de syntax-highlighting de zsh
+
+-Descarga de la termina Kitty
+
+
 Un saludo!!
