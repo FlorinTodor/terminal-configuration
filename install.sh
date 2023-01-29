@@ -13,7 +13,7 @@ sudo dpkg -i bat_0.22.1_amd64.deb
 
 #Instalacion del lsd
 
-sudo apt install -y lsd
+sudo dpkg -i $ruta/lsd.deb
 
 
 #Instalacion de la fuente Hack.zip
@@ -24,9 +24,6 @@ sudo cp -v $ruta/fonts/* /usr/local/share/fonts/
 #Instalacion del zsh
 
 sudo apt install -y zsh
-
-chsh -s $(which zsh)
-
 
 
 #Instalacion del Powelevel10k
@@ -39,12 +36,16 @@ mkdir ~/github
 
 cd ~/github
 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# Instalando p10k
 
-#Instalar p10k root
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+# Instalando p10k root
+
 sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.powerlevel10k
 
+#Instalar fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 
 sudo ~/.fzf/install 
@@ -53,9 +54,10 @@ sudo ~/.fzf/install
 
 #zshrc
 
+rm -rf ~/.zshrc
 cd $ruta
 
-cp -v .1-zshrc-user ~/.zshrc
+cp -v 1-zshrc-user ~/.zshrc
 sudo cp -v 1-zshrc-root /root/.zshrc
 
 #p10k
@@ -78,6 +80,10 @@ sudo apt install -y kitty
 cd $ruta
 
 sudo cp -v $ruta/kitty/* ~/.config/kitty
+
+# Cambiando de SHELL a zsh
+
+sudo ln -s -fv ~/.zshrc /root/.zshrc
 
 notify-send "Terminal Instalada"
 
