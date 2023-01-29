@@ -4,7 +4,7 @@ Configuracion de la terminal.
 @author Florín Emanuel Todor
 # Se debe de tener en cuenta que es el primer repositorio subido a la plataforma.
 
-############## Pasos a seguir #############
+######################## PASOS A SEGUIR ############################
 1º Actualizar el sistemas a través de apt update y apt upgrade
 
 2º Dar permisos al archivo install.sh a través de chmod +x install.sh
@@ -39,7 +39,7 @@ más legible. Para elegir comandos anteriores sería a través de Ctrl + R, para
 
 -Descarga de la termina Kitty
 
-######################## CONSEJOS #################
+######################## CONSEJOS #######################
 
 Se recomienda al terminar realizar un apt update y upgrade. Posteriormente realizar un reboot.
 
