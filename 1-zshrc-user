@@ -75,6 +75,32 @@ function mkt(){
 	mkdir {nmap,content,exploits,scripts}
 }
 
+fuction folders() {
+    if [ $# -ne 1 ]; then
+    echo "Error: Debes pasar exactamente un argumento."
+    
+    else;
+    local company_name="$1"
+    local base_dir="Projects/$company_name"
+    local subdirs=("EPT" "IPT")
+
+    if [ -z "$company_name" ]; then
+        echo "Error: Company name not provided."
+        exit 1
+    fi
+
+    for subdir in "${subdirs[@]}"; do
+        mkdir -p "$base_dir/$subdir/evidence/credentials"
+        mkdir -p "$base_dir/$subdir/evidence/data"
+        mkdir -p "$base_dir/$subdir/evidence/screenshots"
+        mkdir -p "$base_dir/$subdir/logs"
+        mkdir -p "$base_dir/$subdir/scans"
+        mkdir -p "$base_dir/$subdir/scope"
+        mkdir -p "$base_dir/$subdir/tools"
+    done
+    fi
+}
+
 # Extract nmap information
 function extractPorts(){
 	ports="$(cat $1 | grep -oP '\d{1,5}/open' | awk '{print $1}' FS='/' | xargs | tr ' ' ',')"
