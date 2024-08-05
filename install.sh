@@ -57,6 +57,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 rm -rf ~/.zshrc
 cd $ruta
 
+
 cp -v 1-zshrc-user ~/.zshrc
 sudo cp -v 1-zshrc-root /root/.zshrc
 
@@ -93,4 +94,9 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 
 #Eliminacion de carpetas
 rm -rf ~/github
+
+#NeoVim and NvChad
+cd $ruta
+sudo apt install -y neovim
+git clone https://github.com/NvChad/starter ~/.config/nvim && nv
 
