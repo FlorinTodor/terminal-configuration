@@ -98,5 +98,5 @@ rm -rf ~/github
 #NeoVim and NvChad
 cd $ruta
 sudo apt install -y neovim
-git clone https://github.com/NvChad/starter ~/.config/nvim && nv
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 
